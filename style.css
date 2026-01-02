@@ -36,7 +36,8 @@ nav,
 nav {
   justify-content: space-around;
   align-items: center;
-  height: 17vh;
+  height: 80px;
+  padding: 0 2rem;
 }
 
 .nav-links {
@@ -149,15 +150,16 @@ a:hover {
 /* SECTIONS */
 
 section {
-  padding-top: 4vh;
-  height: 96vh;
-  margin: 0 10rem;
+  padding: 3rem 6rem;
+  min-height: auto;
+  margin: 0 auto;
   box-sizing: border-box;
-  min-height: fit-content;
+  max-width: 1400px;
 }
 
 .section-container {
   display: flex;
+  gap: 2rem;
 }
 
 /* PROFILE SECTION */
@@ -165,8 +167,9 @@ section {
 #profile {
   display: flex;
   justify-content: center;
-  gap: 5rem;
-  height: 80vh;
+  gap: 3rem;
+  padding: 5rem 6rem 3rem;
+  min-height: auto;
 }
 
 .section__pic-container {
@@ -268,9 +271,9 @@ section {
 }
 
 .about-containers {
-  gap: 2rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
 }
 
 .about-details-container {
@@ -294,7 +297,7 @@ section {
 }
 
 .details-container {
-  padding: 1.5rem;
+  padding: 1.25rem;
   flex: 1;
   background: white;
   border-radius: 2rem;
@@ -304,8 +307,8 @@ section {
 }
 
 .section-container {
-  gap: 4rem;
-  height: 80%;
+  gap: 2rem;
+  height: auto;
 }
 
 .section__pic-container {
@@ -324,7 +327,7 @@ section {
   color: rgb(85, 85, 85);
   font-weight: 600;
   font-size: 1.75rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .experience-details-container {
@@ -338,7 +341,7 @@ section {
   text-align: initial;
   flex-wrap: wrap;
   flex-direction: row;
-  gap: 2.5rem;
+  gap: 1.5rem;
   justify-content: space-around;
 }
 
@@ -386,7 +389,8 @@ article .icon {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 70vh;
+  padding: 3rem 6rem;
+  min-height: auto;
 }
 
 .contact-info-upper-container {
@@ -396,8 +400,8 @@ article .icon {
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   background: (250, 250, 250);
-  margin: 2rem auto;
-  padding: 0.5rem;
+  margin: 1.5rem auto;
+  padding: 1rem;
 }
 
 .contact-info-container {
@@ -423,8 +427,8 @@ article .icon {
 /* FOOTER SECTION */
 
 footer {
-  height: 26vh;
-  margin: 0 1rem;
+  padding: 2rem 1rem;
+  margin-top: 3rem;
 }
 
 footer p {
