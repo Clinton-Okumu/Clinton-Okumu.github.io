@@ -10,7 +10,7 @@
   }
   
   .about-containers {
-    flex-wrap: wrap;
+    flex-direction: column;
   }
 }
 
@@ -85,7 +85,10 @@
     margin-bottom: 1.5rem;
   }
   
-  .about-containers,
+  .about-containers {
+    flex-direction: column;
+  }
+  
   .contact-info-upper-container,
   .btn-container {
     flex-wrap: wrap;
