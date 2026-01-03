@@ -14,9 +14,10 @@
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li><button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark mode">🌙</button></li>
         </ul>
       </div>
     </nav>
@@ -31,9 +32,10 @@
         </div>
         <ul class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          <li><button id="theme-toggle-mobile" class="theme-toggle-btn-mobile" aria-label="Toggle dark mode">🌙</button></li>
         </ul>
       </div>
     </nav>
@@ -53,7 +55,7 @@
           >
             Download CV
           </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          <button class="btn btn-color-1" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })">
             Contact Info
           </button>
         </div>
@@ -121,13 +123,13 @@
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
-        onclick="location.href='./#experience'"
+        onclick="location.href='./#skills'"
       />
     </section>
 
-    <section id="experience">
+    <section id="skills">
       <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
+      <h1 class="title">Skills</h1>
       <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container">
@@ -140,7 +142,7 @@
                   class="icon"
                 />
                 <div>
-                  <h3>ReactJS</h3>
+                  <h3>NextJS</h3>
                   <p>Experienced</p>
                 </div>
               </article>
@@ -388,13 +390,13 @@
         <div class="nav-links-container">
           <ul class="nav-links">
             <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </nav>
-      <p>Copyright &#169; 2025 Clinton Okumu. All Rights Reserved.</p>
+      <p>Copyright &#169; <span id="current-year"></span> Clinton Okumu. All Rights Reserved.</p>
     </footer>
 
     <script src="script.js"></script>
